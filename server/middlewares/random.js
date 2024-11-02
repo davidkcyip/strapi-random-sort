@@ -9,7 +9,7 @@ module.exports = async (ctx, next) => {
     return;
   }
   if (queryParams.includes("random=true")) {
-    shuffleArray(ctx.body.data);
+    shuffleArray(ctx.body);
   }
   function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
